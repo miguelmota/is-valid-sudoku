@@ -2,7 +2,7 @@
 
 > Returns true if valid [Sudoku](https://en.wikipedia.org/wiki/Sudoku) puzzle values.
 
-<a href="https://en.wikipedia.org/wiki/Sudoku"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/364px-Sudoku-by-L2G-20050714_solution.svg.png" width="300" /></a>
+<a href="https://en.wikipedia.org/wiki/Sudoku"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/364px-Sudoku-by-L2G-20050714_solution.svg.png" width="150" /></a>
 
 # Install
 
