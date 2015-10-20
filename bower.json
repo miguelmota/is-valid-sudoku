@@ -1,0 +1,23 @@
+{
+  "name": "is-valid-sudoku",
+  "main": "is-valid-sudoku.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/miguelmota/is-valid-sudoku",
+  "authors": [
+    "Miguel Mota <miguelmota2@gmail.com>"
+  ],
+  "description": "Returns true if valid Sudoku puzzle values.",
+  "keywords": [
+    "sudoku",
+    "puzzle",
+    "validator"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
