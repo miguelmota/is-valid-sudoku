@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>Sudoku Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sudoku Checker</h1>
+  <form id="form">
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0000">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0001">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0002">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0100">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0101">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0102">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0200">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0201">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0202">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0010">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0011">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0012">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0110">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0111">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0112">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0210">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0211">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0212">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0020">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0021">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0022">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0120">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0121">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0122">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0220">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0221">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="0222">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1000">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1001">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1002">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1100">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1101">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1102">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1200">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1201">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1202">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1010">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1011">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1012">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1110">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1111">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1112">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1210">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1211">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1212">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1020">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1021">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1022">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1120">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1121">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1122">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1220">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1221">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="1222">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2000">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2001">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2002">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2100">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2101">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2102">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2200">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2201">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2202">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2010">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2011">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2012">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2110">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2111">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2112">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2210">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2211">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2212">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2020">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2021">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2022">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2120">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2121">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2122">
+                </td>
+              </tr>
+              <tr>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2220">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2221">
+                </td>
+                <td height="30" width="30" align="center" valign="center">
+                  <input type="text" size="1" maxlength="1" name="2222">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="submit">Validate</button>
+  <output id="output"></output>
+  </form>
+
+  <a href="https://github.com/miguelmota/is-valid-sudoku" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+  <script src="../is-valid-sudoku.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

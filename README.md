@@ -4,6 +4,10 @@
 
 <a href="https://en.wikipedia.org/wiki/Sudoku"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/364px-Sudoku-by-L2G-20050714_solution.svg.png" width="200" /></a>
 
+# Example
+
+[https://lab.miguelmota.com/sudoku-checker](https://lab.miguelmota.com/sudoku-checker)
+
 # Install
 
 ```bash
